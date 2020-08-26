@@ -13,6 +13,7 @@ public class DynamicDataSource extends AbstractRoutingDataSource {
     }
 
     public static class DatabaseContextHolder {
+
         private static final ThreadLocal<DatabaseType> CONTEXT_HOLDER = new ThreadLocal<>();
 
         public static DatabaseType getDatabaseType() {
